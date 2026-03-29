@@ -206,6 +206,53 @@ class _TelaContatosWidgetState extends State<TelaContatosWidget>
                                     ),
                                   ),
                                 ),
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    await launchURL(
+                                        'https://SEU_USUARIO.github.io/NOME_DO_SEU_REPOSITORIO/');
+                                  },
+                                  child: Container(
+                                    width: double.infinity,
+                                    height: 80.0,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                      ),
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.privacy_tip,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          size: 30.0,
+                                        ),
+                                        SizedBox(width: 12.0),
+                                        Text(
+                                          'Política de Privacidade',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                font: GoogleFonts.roboto(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                                color: FlutterFlowTheme.of(context)
+                                                    .secondaryBackground,
+                                                fontSize: 18.0,
+                                              ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ].divide(SizedBox(height: 8.0)),
                             ),
                           ),

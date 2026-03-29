@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tela_video_model.dart';
 export 'tela_video_model.dart';
 
@@ -13,6 +10,8 @@ class TelaVideoWidget extends StatefulWidget {
 
   static String routeName = 'telaVideo';
   static String routePath = '/telaVideo';
+  static const String liveStreamUrl =
+      'https://video01.brascast.com/gente8322/gente8322/playlist.m3u8';
 
   @override
   State<TelaVideoWidget> createState() => _TelaVideoWidgetState();
@@ -60,7 +59,7 @@ class _TelaVideoWidgetState extends State<TelaVideoWidget> {
               child: custom_widgets.CustomVidPlayer(
                 width: double.infinity,
                 height: double.infinity,
-                videoPath: 'https://live.brascast.com/player/gente8322',
+                videoPath: TelaVideoWidget.liveStreamUrl,
                 playPauseVideoAction: true,
                 autoPlay: true,
                 looping: false,

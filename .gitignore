@@ -1,0 +1,39 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+build/
+coverage/
+
+# IntelliJ / VS Code
+.idea/
+.vscode/
+*.iml
+
+# macOS / misc
+.DS_Store
+*.log
+
+# Generated platform files
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Generated.xcconfig
+ios/Flutter/.last_build_id
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+ios/Pods/
+ios/.symlinks/
+
+macos/Flutter/ephemeral/
+macos/Flutter/generated_config.cmake
+macos/Flutter/Flutter-Generated.xcconfig
+macos/Pods/
+macos/.symlinks/
+
+linux/flutter/ephemeral/
+linux/flutter/generated_plugin_registrant.*
+windows/flutter/ephemeral/
+windows/flutter/generated_plugin_registrant.*
